@@ -1,0 +1,37 @@
+// variables
+$mainColor: orange;
+$mainHoverColor: lighten($mainColor, 20%);
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+// nesting
+nav {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: orange;
+  padding: 2%;
+
+  ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  li {
+    flex-grow: 1;
+  }
+
+  a {
+    display: block;
+    background: $mainColor;
+    color: white;
+    text-align: center;
+
+    &:hover {
+      background: $mainHoverColor;
+    }
+  }
+}
